@@ -1,4 +1,4 @@
--- creating a unique user table
+-- We are all unique!
 
 create table if not exists users(
     id INT AUTO_INCREMENT PRIMARY KEY not null,

@@ -3,7 +3,11 @@ I. ressources:
 cheatsheet --> https://devhints.io/mysql
 mysql performance --> https://www.liquidweb.com/blog/mysql-optimization-how-to-leverage-mysql-database-indexing/
 
-I. notes
+# terms :
+Dump : a .sql file containing table creation and data insertion (usualy used for backup,replication or migration)
+
+
+II. notes
 1. indexing
 
     makes data retrieval faster by searching with row numbers , 

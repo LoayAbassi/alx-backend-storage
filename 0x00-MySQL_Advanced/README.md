@@ -6,6 +6,9 @@ mysql performance --> https://www.liquidweb.com/blog/mysql-optimization-how-to-l
 # terms :
 Dump : a .sql file containing table creation and data insertion (usualy used for backup,replication or migration)
 
+trigger : activated when a certain action is done example : 4-store
+
+
 
 II. notes
 1. indexing

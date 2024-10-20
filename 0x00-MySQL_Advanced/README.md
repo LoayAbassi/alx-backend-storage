@@ -6,7 +6,7 @@ mysql performance --> https://www.liquidweb.com/blog/mysql-optimization-how-to-l
 # terms :
 Dump : a .sql file containing table creation and data insertion (usualy used for backup,replication or migration)
 
-trigger : activated when a certain action is done example : 4-store
+
 
 
 
@@ -34,3 +34,11 @@ II. notes
     setting unique indexes makes the search faster since it
     makes the code know there are no duplicates so it can skip some checks 
 
+2. trigger
+
+    delimiter:
+        used when dealing with multiple sub_blocks like triggers , 
+        to make sure the block doesn't end at the first ; 
+        instead 'delimiter //; .... delimiter;' will make // as new one.
+
+    PS : triggers are before and after triggers... focus

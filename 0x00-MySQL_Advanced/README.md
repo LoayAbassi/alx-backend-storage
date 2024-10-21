@@ -42,3 +42,14 @@ II. notes
         instead 'delimiter //; .... delimiter;' will make // as new one.
 
     PS : triggers are before and after triggers... focus
+
+3. function
+
+    DETERMINISTIC function : same output for same input 
+    caching : if function called multiple times , values will be saved for futur usages 
+
+4. view
+
+    virtual table that is a subtable of another
+    
+

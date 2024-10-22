@@ -48,6 +48,8 @@ II. notes
     DETERMINISTIC function : same output for same input 
     caching : if function called multiple times , values will be saved for futur usages 
 
+    cursors should be last thing to declare inside.
+
 4. view
 
     virtual table that is a subtable of another

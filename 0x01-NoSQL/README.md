@@ -60,6 +60,8 @@ key-value pair
 
     db.users.updateOne({name:"Alice"},{$set:{email:"mail@mail.mail",something:5}})
 
+5. counting
 
-
+    db.school.countDocuments()
+    db.collection.countDocuments({ age: { $gt: 25 } })
 

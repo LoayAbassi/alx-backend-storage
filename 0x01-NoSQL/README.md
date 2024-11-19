@@ -70,7 +70,30 @@ key-value pair
 from pymongo import MongoClient
 client = MongoClient(mongoAdress)
 collection= client.db_name.collection_name
+1. finding
 L = mongo_collection.find() // returns all documents 
 L = list(L) # must be converted to list :)
-x = collection.insert_one(kwargs)
+2. inserting
+x = collection.insert_one(kwargs) // returns new_object(with id)
+3. updating
+key = {"name": name}
+update = {"$set": {"topics": topics}}
+update = collection.update_many(key, update)
+
+### aggregation
+manipulates the data by processing it through multiple stages in the pipeline. Each stage performs a specific operation (filtering, grouping, sorting, etc.) on the documents, and the final result is the output after all stages have been applied. It's like transforming the data step by step before presenting it.
+
+operations: {
+    $match: Filters the documents based on a condition (similar to find).
+    $group: Groups documents by a specific identifier and performs aggregation operations (like sum, average, etc.).
+    $sort: Sorts the documents.
+    $project: Reshapes documents by including/excluding fields.
+    $limit: Limits the number of documents.
+    $skip: Skips a specific number of documents.
+    $unwind: Deconstructs an array field from the input documents to output a document for each element.
+}
+
+pipeline can contain the methods as conditions for 
+-- example usage : 
+
 

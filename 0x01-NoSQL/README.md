@@ -65,3 +65,7 @@ key-value pair
     db.school.countDocuments()
     db.collection.countDocuments({ age: { $gt: 25 } })
 
+### connection to python
+
+from pymongo import MongoClient
+client = mongo

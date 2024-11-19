@@ -1,2 +1,2 @@
-// updating / adding more data
-db.school.updateMany({name:"Holberton school"},{$set:{address : "972 Mission street"}})
+// updateMany for newest versions
+db.school.update({name:"Holberton school"},{$set:{address : "972 Mission street"}},{multi:true})

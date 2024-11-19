@@ -68,4 +68,9 @@ key-value pair
 ### connection to python
 
 from pymongo import MongoClient
-client = mongo
+client = MongoClient(mongoAdress)
+collection= client.db_name.collection_name
+L = mongo_collection.find() // returns all documents 
+L = list(L) # must be converted to list :)
+x = collection.insert_one(kwargs)
+

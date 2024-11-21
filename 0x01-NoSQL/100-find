@@ -1,0 +1,2 @@
+// filters output by first word in name
+db.school.find({name:/^Holberton/})
